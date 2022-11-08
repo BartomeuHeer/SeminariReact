@@ -16,6 +16,9 @@ export {}
 export const delUser = async (name: string) => {
     return await axios.delete(`${API}/users/delete/${name}`);
 }
+export const editUser = async (userID: string) => {
+    return await axios.put(`${API}/users/update/${userID}`);
+}
 export {}
 
 
